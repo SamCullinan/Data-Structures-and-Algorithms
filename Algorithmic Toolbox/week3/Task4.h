@@ -1,44 +1,25 @@
 //
-//  Task4.h
+//  Task5.h
 //  week3
 //
 //  Created by Самир Новрузов on 13.04.2020.
 //  Copyright © 2020 Самир Новрузов. All rights reserved.
 //
 #pragma once
-#ifndef Task4_h
-#define Task4_h
-
-#include <iostream>
-#include <vector>
+#ifndef Task5_h
+#define Task5_h
 
 
-int car_fueling(int d, int m, vector<int> & fueling, int start, int count) {
+long long Revenue(vector<int>& profit_per_click, vector<int>& average_number) {
+    sort(profit_per_click.begin(), profit_per_click.end());
+    sort(average_number.begin(), average_number.end());
     
-    if ((start + m) >= d)
-        return count;
+    long long result = 0;
     
-    if (fueling.size() == 0)
-        return -1;
-    
-    int old_start = start;
-    
-    for (int i = 0; i < fueling.size(); i++) {
-        
-        if (fueling[i] <= (start + m)) {
-            old_start = fueling[i];
-        } else {
-    
-            if (i != 0)
-                fueling.erase(fueling.begin(), fueling.begin() + i);
-            else
-                fueling.erase(fueling.begin());
-            
-            return car_fueling(d, m, fueling, old_start, count+1);
-        }
+    for (int i = 0; i < profit_per_click.size(); i++) {
+        result += (long long) profit_per_click[i] * average_number[i];
     }
-    
-    return (old_start + m) >= d ? count+1 : -1;
+    return result;
 }
 
-#endif /* Task4_h */
+#endif /* Task5_h */
