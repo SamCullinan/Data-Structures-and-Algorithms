@@ -6,8 +6,6 @@
 //  Copyright © 2020 Самир Новрузов. All rights reserved.
 //
 #pragma once
-#ifndef Task4_h
-#define Task4_h
 
 #include <iostream>
 #include <vector>
@@ -40,5 +38,3 @@ int car_fueling(int d, int m, vector<int> & fueling, int start, int count) {
     
     return (old_start + m) >= d ? count+1 : -1;
 }
-
-#endif /* Task4_h */

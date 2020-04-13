@@ -6,10 +6,6 @@
 //  Copyright © 2020 Самир Новрузов. All rights reserved.
 //
 #pragma once
-#ifndef Task2_h
-#define Task2_h
-
-
 
 
 int get_best_index(vector<double>& ratios) {
@@ -59,4 +55,3 @@ void Fractional_Knapsack(int capacity, vector<int> weights, vector<int> values) 
     cout.precision(10);
     cout << value << endl;
 }
-#endif /* Task2_h */

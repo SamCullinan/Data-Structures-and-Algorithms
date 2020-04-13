@@ -7,10 +7,6 @@
 //
 
 #pragma once
-#ifndef Task1_h
-#define Task1_h
-
-
 
 int money_change(int money){
     int count = 0;
@@ -29,4 +25,3 @@ int money_change(int money){
     return count;
 }
 
-#endif /* Task1_h */

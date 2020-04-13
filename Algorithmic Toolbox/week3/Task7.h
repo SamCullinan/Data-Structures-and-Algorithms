@@ -6,8 +6,7 @@
 //  Copyright © 2020 Самир Новрузов. All rights reserved.
 //
 
-#ifndef Task7_h
-#define Task7_h
+#pragma once
 
 bool GreaterOrEqual(string& one, string& two) {
     return(two + one > one + two);
@@ -26,4 +25,4 @@ string MaxSalary(vector<string> numbers, int n) {
     return Salary.str();
 }
 
-#endif /* Task7_h */
+

@@ -6,8 +6,7 @@
 //  Copyright © 2020 Самир Новрузов. All rights reserved.
 //
 #pragma once
-#ifndef Task6_h
-#define Task6_h
+
 void maximum_number_of_prizes(int n) {
   vector<int> prizes;
     
@@ -31,4 +30,4 @@ void maximum_number_of_prizes(int n) {
     cout << prize << " ";
 }
 
-#endif /* Task6_h */
+

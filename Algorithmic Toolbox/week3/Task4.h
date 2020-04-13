@@ -6,8 +6,7 @@
 //  Copyright © 2020 Самир Новрузов. All rights reserved.
 //
 #pragma once
-#ifndef Task5_h
-#define Task5_h
+
 
 
 long long Revenue(vector<int>& profit_per_click, vector<int>& average_number) {
@@ -22,4 +21,4 @@ long long Revenue(vector<int>& profit_per_click, vector<int>& average_number) {
     return result;
 }
 
-#endif /* Task5_h */
+
