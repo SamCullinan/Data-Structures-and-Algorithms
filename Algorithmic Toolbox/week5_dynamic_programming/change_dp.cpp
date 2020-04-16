@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int get_change(int *coins, int n, int money) {
+int get_change(int *coins, const int n, int money) {
     vector<int> arr(money + 1, INT_MAX);
     arr[0] = 0;
     
@@ -21,10 +21,11 @@ int get_change(int *coins, int n, int money) {
 
 int main() {
   
-    int Money;
-    cin >> Money;
-    int coins[3] = { 1, 3, 4 };
-    cout << get_change(coins, 3, Money) << endl;
+    int money;
+    cin >> money;
+    const int n = 3;
+    int coins[n] = { 1, 3, 4 };
+    cout << get_change(coins, n, money) << endl;
     return 0;
 }
 
